@@ -13,7 +13,13 @@
 				</li>
 				<li>
 					<a href="test02.php">第2個練習程式：計算累加和累乘</a>
-				</li>										
+				</li>	
+				<li>
+					<a href="test03.php">第3個練習程式：電視選台</a>
+				</li>		
+				<li>
+					<a href="test04.php">第4個練習程式：匯率轉換</a>
+				</li>											
 			</ol>
 		<hr>
 		<p>2020/08/28</p>
