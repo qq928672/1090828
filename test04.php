@@ -12,7 +12,7 @@ $rate_list= array(
 		);
 ?>
 <form method='POST' action="test04.php">
-	新台幣:<input type="text" size=7 value="500" neme="money">元<br>
+	新台幣:<input type="text" size=7 value="500"  name="money">元<br>
 	<select name="dollar">
 <?php
  	//使用foreach迴圈取出陣列中所有的內容
@@ -36,9 +36,9 @@ $rate_list= array(
 	//v顯示出該幣別對應的匯率(重陣列取出)
 	echo $rate_list[$dollar]["rate"] ."<br>";
 	//計算轉換後的該幣別之金額
-	// $result = $money / $rate_list[$dollar]["rate"];
-	// echo"台幣" . $money . "元轉換成" .
-	// 	$rate_list[$dollar]['name'] . "是" .
-	// 	round($result,2) . "元" ;
+	$result = $money / $rate_list[$dollar]["rate"];
+	echo"台幣" . $money . "元轉換成" .
+		$rate_list[$dollar]['name'] . "是" .
+		round($result,2) . "元" ;
 
 ?>
